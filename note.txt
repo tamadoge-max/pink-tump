@@ -1,0 +1,7 @@
+1. complete create token
+
+2. start on token view page
+
+3. add extra params denormalized
+
+4. 

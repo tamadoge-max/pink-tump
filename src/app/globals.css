@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+
+    --card: #ffffff;
+    --card-foreground: #150116;
+
+    --popover: #ffffff;
+    --popover-foreground: #120116;
+
+    --primary: #eb24d1;
+    --primary-foreground: #ffffff;
+
+    --secondary: #f1f5f9;
+    --secondary-foreground: #260f2a;
+
+    --muted: #8d7895;
+    --muted-foreground: #84648b;
+
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172a;
+
+    --success: #22bb33;
+    --success-foreground: #f7f9fb;
+
+    --destructive: #ef4444;
+    --destructive-foreground: #f7f9fb;
+
+    --warning: #f0ad4e;
+    --warning-foreground: #000000;
+
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #010816;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #070007;
+    --foreground: #ffffff;
+
+    --card: #16021c;
+    --card-foreground: #ffffff;
+
+    --popover: #180218;
+    --popover-foreground: #ffffff;
+
+    --primary: #eb24d1;
+    --primary-foreground: #ffffff;
+
+    --secondary: #3b0c36;
+    --secondary-darker: #270425;
+    --secondary-foreground: #ffffff;
+
+    --muted: #aea9ae;
+    --muted-foreground: #a889a8;
+
+    --accent: #391e3b;
+    --accent-foreground: #ffffff;
+
+    --input: #0e000e;
+    --input-border: #3b1e37;
+
+    --border: #381e3b;
+
+    --ring: #843679;
+  }
+
+  .elipse {
+    clip-path: ellipse(50% 50% at 50% 0%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* overflow-x: hidden; */
+  }
+}
+
+@layer components {
+  .glow {
+    border-color: #2463eb;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

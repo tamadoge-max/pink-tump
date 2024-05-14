@@ -1,0 +1,24 @@
+.slide-in-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+  margin-right: -200px;
+}
+
+.slide-in-enter-active {
+  transition: transform 300ms ease, opacity 300ms ease-out,
+    margin-right 300ms ease;
+  opacity: 1;
+  transform: translateX(0);
+  margin-right: 0;
+}
+
+.slide-in-exit {
+  opacity: 1;
+  transform: translateX(-100%);
+}
+
+.slide-in-exit-active {
+  opacity: 0;
+  transition: transform 300ms ease, opacity 300ms ease-out;
+  transform: translateX(0);
+}
